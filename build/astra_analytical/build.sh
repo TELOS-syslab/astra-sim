@@ -9,6 +9,9 @@ CHAKRA_ET_DIR="${SCRIPT_DIR:?}"/../../extern/graph_frontend/chakra/schema/protob
 # set functions
 function compile_chakra_et() {
   # compile et_def.proto if one doesn't exist
+  # which protoc
+  # protoc --version
+  # read -p "ddddd"
   if [[ ! -f "${CHAKRA_ET_DIR:?}"/et_def.pb.h || ! -f "${CHAKRA_ET_DIR:?}"/et_def.pb.cc ]]; then
     protoc et_def.proto \
       --proto_path="${CHAKRA_ET_DIR:?}" \

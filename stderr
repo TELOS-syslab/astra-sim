@@ -1,0 +1,178 @@
+/bin/bash: /root/anaconda3/envs/astra-sim/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/root/anaconda3/envs/astra-sim/bin/protoc
+libprotoc 3.6.1
+dddddcmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by cmake)
+-- {fmt} version: 11.0.2
+-- Build type: Release
+-- Build spdlog: 1.14.1
+-- Build type: Release
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/fth/software4/astra-sim/build/astra_analytical/build
+cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Consolidate compiler generated dependencies of target fmt
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Consolidate compiler generated dependencies of target spdlog
+[  2%] Built target fmt
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Consolidate compiler generated dependencies of target yaml-cpp
+[  7%] Built target spdlog
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 29%] Built target yaml-cpp
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Consolidate compiler generated dependencies of target yaml-cpp-parse
+Consolidate compiler generated dependencies of target yaml-cpp-read
+Consolidate compiler generated dependencies of target yaml-cpp-sandbox
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Consolidate compiler generated dependencies of target Analytical_Congestion_Unaware
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Consolidate compiler generated dependencies of target Analytical_Congestion_Aware
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 32%] Built target yaml-cpp-read
+[ 33%] Built target yaml-cpp-parse
+[ 34%] Built target yaml-cpp-sandbox
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 52%] Built target Analytical_Congestion_Unaware
+[ 53%] Built target Analytical_Congestion_Aware
+Consolidate compiler generated dependencies of target AstraSim
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 56%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/CommunicatorGroup.cc.o
+[ 56%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/BaseStream.cc.o
+[ 59%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/SimSendCaller.cc.o
+[ 59%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/LogGP.cc.o
+[ 59%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/PacketBundle.cc.o
+[ 59%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/RecvPacketEventHandlerData.cc.o
+[ 59%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/DataSet.cc.o
+[ 59%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/MemBus.cc.o
+[ 59%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/CollectivePhase.cc.o
+[ 64%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/RendezvousRecvData.cc.o
+[ 64%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/RendezvousSendData.cc.o
+[ 64%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/MemMovRequest.cc.o
+[ 65%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/StreamBaseline.cc.o
+[ 65%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/SimRecvCaller.cc.o
+[ 65%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/Sys.cc.o
+[ 65%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/UsageTracker.cc.o
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 66%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/WorkloadLayerHandlerData.cc.o
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 67%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/collective/Algorithm.cc.o
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 67%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/collective/AllToAll.cc.o
+[ 68%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/collective/ChakraImpl.cc.o
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 69%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/collective/DoubleBinaryTreeAllReduce.cc.o
+[ 69%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/collective/HalvingDoubling.cc.o
+[ 70%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/collective/Ring.cc.o
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 71%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/scheduling/OfflineGreedy.cc.o
+[ 71%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/topology/BinaryTree.cc.o
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 72%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/topology/DoubleBinaryTreeTopology.cc.o
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 73%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/topology/GeneralComplexTopology.cc.o
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 73%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/topology/LocalRingGlobalBinaryTree.cc.o
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 75%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/topology/LocalRingNodeA2AGlobalDBT.cc.o
+[ 75%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/topology/Node.cc.o
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 75%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/topology/RingTopology.cc.o
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 76%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/system/topology/Torus3D.cc.o
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 77%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/workload/HardwareResource.cc.o
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 78%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/astra-sim/workload/Workload.cc.o
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 78%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/extern/graph_frontend/chakra/schema/protobuf/et_def.pb.cc.o
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 79%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/extern/graph_frontend/chakra/src/feeder/et_feeder.cpp.o
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 80%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/extern/graph_frontend/chakra/src/feeder/et_feeder_node.cpp.o
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 80%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/extern/graph_frontend/chakra/src/third_party/utils/protoio.cc.o
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 81%] Building CXX object AstraSim/CMakeFiles/AstraSim.dir/extern/remote_memory_backend/analytical/AnalyticalRemoteMemory.cc.o
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 82%] Linking CXX static library ../lib/libAstraSim.a
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 88%] Built target AstraSim
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 88%] Building CXX object AstraSim_Analytical/CMakeFiles/AstraSim_Analytical_Congestion_Aware.dir/congestion_aware/CongestionAwareNetworkApi.cc.o
+[ 90%] Building CXX object AstraSim_Analytical/CMakeFiles/AstraSim_Analytical_Congestion_Unaware.dir/common/ChunkIdGenerator.cc.o
+[ 90%] Building CXX object AstraSim_Analytical/CMakeFiles/AstraSim_Analytical_Congestion_Aware.dir/common/CallbackTrackerEntry.cc.o
+[ 90%] Building CXX object AstraSim_Analytical/CMakeFiles/AstraSim_Analytical_Congestion_Unaware.dir/congestion_unaware/CongestionUnawareNetworkApi.cc.o
+[ 94%] Building CXX object AstraSim_Analytical/CMakeFiles/AstraSim_Analytical_Congestion_Unaware.dir/congestion_unaware/main.cc.o
+[ 94%] Building CXX object AstraSim_Analytical/CMakeFiles/AstraSim_Analytical_Congestion_Unaware.dir/common/CallbackTracker.cc.o
+[ 94%] Building CXX object AstraSim_Analytical/CMakeFiles/AstraSim_Analytical_Congestion_Aware.dir/common/CallbackTracker.cc.o
+[ 94%] Building CXX object AstraSim_Analytical/CMakeFiles/AstraSim_Analytical_Congestion_Aware.dir/common/CmdLineParser.cc.o
+[ 94%] Building CXX object AstraSim_Analytical/CMakeFiles/AstraSim_Analytical_Congestion_Aware.dir/congestion_aware/main.cc.o
+[ 94%] Building CXX object AstraSim_Analytical/CMakeFiles/AstraSim_Analytical_Congestion_Unaware.dir/common/CommonNetworkApi.cc.o
+[ 98%] Building CXX object AstraSim_Analytical/CMakeFiles/AstraSim_Analytical_Congestion_Aware.dir/common/ChunkIdGenerator.cc.o
+[ 98%] Building CXX object AstraSim_Analytical/CMakeFiles/AstraSim_Analytical_Congestion_Aware.dir/common/ChunkIdGeneratorEntry.cc.o
+[ 98%] Building CXX object AstraSim_Analytical/CMakeFiles/AstraSim_Analytical_Congestion_Aware.dir/common/CommonNetworkApi.cc.o
+[ 98%] Building CXX object AstraSim_Analytical/CMakeFiles/AstraSim_Analytical_Congestion_Unaware.dir/common/CallbackTrackerEntry.cc.o
+[ 98%] Building CXX object AstraSim_Analytical/CMakeFiles/AstraSim_Analytical_Congestion_Unaware.dir/common/ChunkIdGeneratorEntry.cc.o
+[ 98%] Building CXX object AstraSim_Analytical/CMakeFiles/AstraSim_Analytical_Congestion_Unaware.dir/common/CmdLineParser.cc.o
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[ 99%] Linking CXX executable ../bin/AstraSim_Analytical_Congestion_Aware
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[100%] Linking CXX executable ../bin/AstraSim_Analytical_Congestion_Unaware
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[100%] Built target AstraSim_Analytical_Congestion_Aware
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+[100%] Built target AstraSim_Analytical_Congestion_Unaware
+/usr/bin/cmake: /root/anaconda3/envs/astra-sim/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)

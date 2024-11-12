@@ -35,6 +35,9 @@ add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/extern/helper/spdlog")
 if(DEFINED ENV{PROTOBUF_FROM_SOURCE} AND "$ENV{PROTOBUF_FROM_SOURCE}" STREQUAL "True")
     find_package(protobuf CONFIG REQUIRED)
 else()
+    set(Protobuf_PROTOC_EXECUTABLE /root/anaconda3/envs/astra-sim/bin/protoc)
+    set(Protobuf_INCLUDE_DIR /root/anaconda3/envs/astra-sim/include)
+    set(Protobuf_LIBRARY /root/anaconda3/envs/astra-sim/lib/libprotobuf.so) # 或者是 .so 文件
     find_package(Protobuf REQUIRED)
 endif()
 
