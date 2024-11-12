@@ -1,0 +1,99 @@
+# *****************************************************************************
+# This source code is licensed under the MIT license found in the
+# LICENSE file in the root directory of this source tree.
+# 本源代码根据根目录 LICENSE 文件中的 MIT 许可证授权
+#
+# Copyright (c) 2024 Georgia Institute of Technology
+# 版权所有 (c) 2024 乔治亚理工学院
+# *****************************************************************************
+
+# CMake Requirement
+cmake_minimum_required(VERSION 3.22)  # 设置最低要求的 CMake 版本为 3.22
+
+# C++ requirement
+set(CMAKE_CXX_STANDARD 17)  # 设置 C++ 标准为 C++17
+set(CMAKE_CXX_STANDARD_REQUIRED ON)  # 强制要求使用指定的 C++ 标准
+
+# Set the build type to Release if not specified
+if(NOT CMAKE_BUILD_TYPE)  # 如果未指定 CMAKE_BUILD_TYPE，设置为 Release 模式
+    set(CMAKE_BUILD_TYPE Release)  # 设置默认构建类型为 Release
+endif()
+
+# Setup project
+project(AstraSim)  # 定义项目名称为 AstraSim
+
+# Add libraries.
+add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/extern/helper/fmt")  # 添加 fmt 库子目录
+option(SPDLOG_FMT_EXTERNAL ON)  # 设置 spdlog 使用外部的 fmt 库
+add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/extern/helper/spdlog")  # 添加 spdlog 库子目录
+
+# Find Protobuf
+# TODO: We want to use the advanced semantics 'protobuf CONFIG REQUIRED'.
+# However, this requires protobuf to be compiled from source,
+# which is enabled only in Docker containers. (Our documentation makes users install protobuc from apt-get)
+# Therefore, enable 'protobuf CONFIG REQUIRED' only when we are building in Docker.
+# TODO: Find a better way to detect if protobuf has been compiled by source, OR
+# find a way to enable 'protobuf CONFIG REQUIRED' regardless of how protubuf was installed.
+# TODO: 我们希望使用高级语法 'protobuf CONFIG REQUIRED'。
+# 但是，这要求 protobuf 从源码编译，这只在 Docker 容器中启用。
+# （我们的文档指导用户通过 apt-get 安装 protobuf）
+# 因此，仅在 Docker 中构建时启用 'protobuf CONFIG REQUIRED'。
+# TODO: 找到更好的方法来检测 protobuf 是否已通过源码编译，
+# 或者找到方法在不考虑安装方式的情况下启用 'protobuf CONFIG REQUIRED'。
+if(DEFINED ENV{PROTOBUF_FROM_SOURCE} AND "$ENV{PROTOBUF_FROM_SOURCE}" STREQUAL "True")  # 如果环境变量 PROTOBUF_FROM_SOURCE 定义为 True
+    find_package(protobuf CONFIG REQUIRED)  # 使用 CONFIG 模式查找 protobuf 包
+else()
+    set(Protobuf_PROTOC_EXECUTABLE /root/anaconda3/envs/astra-sim/bin/protoc)  # 指定 protoc 可执行文件的路径
+    set(Protobuf_INCLUDE_DIR /root/anaconda3/envs/astra-sim/include)  # 指定 Protobuf 的头文件路径
+    set(Protobuf_LIBRARY /root/anaconda3/envs/astra-sim/lib/libprotobuf.so)  # 指定 Protobuf 的库文件路径
+    find_package(Protobuf REQUIRED)  # 查找 Protobuf 包
+endif()
+
+# Files to compile
+file(GLOB srcs
+    "${CMAKE_CURRENT_SOURCE_DIR}/astra-sim/system/*.cc"  # 查找 astra-sim/system 下的 .cc 文件
+    "${CMAKE_CURRENT_SOURCE_DIR}/astra-sim/workload/*.cc"  # 查找 astra-sim/workload 下的 .cc 文件
+    "${CMAKE_CURRENT_SOURCE_DIR}/astra-sim/system/collective/*.cc"  # 查找 astra-sim/system/collective 下的 .cc 文件
+    "${CMAKE_CURRENT_SOURCE_DIR}/astra-sim/system/topology/*.cc"  # 查找 astra-sim/system/topology 下的 .cc 文件
+    "${CMAKE_CURRENT_SOURCE_DIR}/astra-sim/system/memory/*.cc"  # 查找 astra-sim/system/memory 下的 .cc 文件
+    "${CMAKE_CURRENT_SOURCE_DIR}/astra-sim/system/scheduling/*.cc"  # 查找 astra-sim/system/scheduling 下的 .cc 文件
+    "${CMAKE_CURRENT_SOURCE_DIR}/astra-sim/common/*.cc"  # 查找 astra-sim/common 下的 .cc 文件
+    "${CMAKE_CURRENT_SOURCE_DIR}/extern/graph_frontend/chakra/src/third_party/utils/*.cc"  # 查找 extern/graph_frontend/chakra/src/third_party/utils 下的 .cc 文件
+    "${CMAKE_CURRENT_SOURCE_DIR}/extern/graph_frontend/chakra/schema/protobuf/*.cc"  # 查找 extern/graph_frontend/chakra/schema/protobuf 下的 .cc 文件
+    "${CMAKE_CURRENT_SOURCE_DIR}/extern/graph_frontend/chakra/src/feeder/*.cpp"  # 查找 extern/graph_frontend/chakra/src/feeder 下的 .cpp 文件
+    "${CMAKE_CURRENT_SOURCE_DIR}/extern/remote_memory_backend/analytical/*.cc")  # 查找 extern/remote_memory_backend/analytical 下的 .cc 文件
+
+# Compile AstraSim Library
+add_library(AstraSim STATIC ${srcs})  # 编译 AstraSim 库为静态库
+
+# Link libraries
+target_link_libraries(AstraSim PUBLIC fmt::fmt)  # 链接 fmt 库
+target_link_libraries(AstraSim PUBLIC spdlog::spdlog)  # 链接 spdlog 库
+
+# Same as above.
+if(DEFINED ENV{PROTOBUF_FROM_SOURCE} AND "$ENV{PROTOBUF_FROM_SOURCE}" STREQUAL "True")  # 如果环境变量 PROTOBUF_FROM_SOURCE 为 True
+    target_link_libraries(AstraSim PUBLIC protobuf::libprotobuf)  # 链接 Protobuf 库（使用 CONFIG 模式）
+else()
+    target_link_libraries(AstraSim PUBLIC ${Protobuf_LIBRARIES})  # 链接 Protobuf 库（使用默认路径）
+endif()
+
+# Include Directories
+target_include_directories(AstraSim PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})  # 包含当前源文件目录
+target_include_directories(AstraSim PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/extern/graph_frontend/chakra/)  # 包含 extern/graph_frontend/chakra 目录
+target_include_directories(AstraSim PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/extern/graph_frontend/chakra/schema/protobuf)  # 包含 extern/graph_frontend/chakra/schema/protobuf 目录
+target_include_directories(AstraSim PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/extern/graph_frontend/chakra/src/third_party/utils)  # 包含 extern/graph_frontend/chakra/src/third_party/utils 目录
+target_include_directories(AstraSim PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/extern/helper/)  # 包含 extern/helper 目录
+
+# Same as above.
+if(DEFINED ENV{PROTOBUF_FROM_SOURCE} AND "$ENV{PROTOBUF_FROM_SOURCE}" STREQUAL "True")  # 如果环境变量 PROTOBUF_FROM_SOURCE 为 True
+    target_include_directories(AstraSim PUBLIC ${Protobuf_INCLUDE_DIRS})  # 包含 Protobuf 的头文件目录
+endif()
+
+# Properties
+set_target_properties(AstraSim PROPERTIES COMPILE_WARNING_AS_ERROR OFF)  # 关闭编译警告作为错误
+set_target_properties(AstraSim
+    PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/../bin/  # 设置运行时输出目录
+    LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/../lib/  # 设置库文件输出目录
+    ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/../lib/  # 设置归档文件输出目录
+)

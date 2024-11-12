@@ -61,6 +61,15 @@ $ ./build/astra_analytical/build.sh
 # For NS3 Network Backend
 $ ./build/astra_ns3/build.sh -c
 
+
+注释了 不允许root的函数
+    # Refuse to run with sudo
+    # refuse_run_as_root()
+
+/mnt/fth/software4/astra-sim/build/astra_analytical/build/AnalyticalAstra/bin/AnalyticalAstra
+
+
+
 # ASTRA-sim 2.0
 [ASTRA-sim](https://astra-sim.github.io/) is a distributed machine learning system simulator developed by Intel, Meta, and Georgia Tech. It enables the systematic study of challenges in modern deep learning systems, allowing for the exploration of bottlenecks and the development of efficient methodologies for large DNN models across diverse future platforms.
 

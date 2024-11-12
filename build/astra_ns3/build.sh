@@ -12,6 +12,13 @@ LOGICAL_TOPOLOGY="${SCRIPT_DIR:?}"/../../inputs/network/ns3/sample_8nodes_1D.jso
 # Note that ONLY this file is relative to NS3_DIR/simulation
 NETWORK="../../../ns-3/scratch/config/config.txt"
 # Functions
+# function setup {
+#     protoc et_def.proto\
+#         --proto_path ${SCRIPT_DIR}/../../extern/graph_frontend/chakra/et_def/\
+#         --cpp_out ${SCRIPT_DIR}/../../extern/graph_frontend/chakra/et_def/
+# }
+
+# /mnt/fth/software4/astra-sim/extern/graph_frontend/chakra/schema/protobuf/et_def.proto
 function setup {
     protoc et_def.proto\
         --proto_path ${SCRIPT_DIR}/../../extern/graph_frontend/chakra/et_def/\
